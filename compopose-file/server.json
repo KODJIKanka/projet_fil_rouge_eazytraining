@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "1": {
+            "Name": "devops project",
+            "Group": "database group",
+            "Port": 5432,
+            "Username": "odoo",
+            "Host": "localhost",
+            "Password": "myodoo",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}
