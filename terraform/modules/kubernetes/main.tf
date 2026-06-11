@@ -17,10 +17,10 @@ resource "aws_instance" "ec2_project" {
       private_key = file(var.private_key_path)
       host = self.public_ip 
     }
-    script = ["/scripts/install_docker.sh"]
+    script = ["scripts/install_kubernetes.sh"]
   }
   provisioner "local-exec" {
-    command = "echo Your public IP is: ${self.public_ip} >> ./ip/docker_ip.txt"
+    command = "echo Your public IP is: ${self.public_ip} >> ./ip/kubernetes_ip.txt"
     
   }
   tags = {
