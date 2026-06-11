@@ -27,11 +27,12 @@ Thumbs.db
 *.swo
 
 # Terraform
-.terraform/
+2_terraform/.terraform/
 
 # Logs
 *.log
 accesstoken.txt
 *.pem
-terraform.tfstate
-terraform.tfstate.backup
+2_terraform/terraform.tfstate
+2_terraform/terraform.tfstate.backup
+2_terraform/.terraform.lock.hcl
